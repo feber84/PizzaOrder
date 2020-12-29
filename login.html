@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Matic</title>
+    <meta name="description" content="Give your Pizza order with easy.">
+    <meta name="keywords" content="pizza,order,online,delivery">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <p>Please login give an order</p>
+    </header>
+    <main>
+        <form action="./order.html" method="POST">
+            <section>
+            <label for="username">Username:</label>
+            <input id="username" type="text" minlength="3" maxlength="12" pattern="[a-zA-Z0-9]" title="Use letters and numbers between 3-12 characters" required>
+            </section>
+            <br>
+            <section>
+            <label for="password">Password:</label>
+            <input id="password" type="password" minlength="8" maxlength="15" placeholder="give your password" required>
+            </section>
+            <br>
+            <section>
+            <input type="submit" value="Login">
+            </section>
+        </form>
+
+    </main>
+    <hr>
+
+    <footer>
+        &copy;2020 PizzaMatic
+    </footer>
+    
+</body>
+</html>

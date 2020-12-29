@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzamatic Order Your Pizza</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Pizza</h1>
+    </header>
+    <main>
+        <form action="./order.html" method="POST">
+          <section>
+            <label ifor="pizza_name">Name your pizza:</label><br>
+            <input id="pizza_name" type="text">
+          </section>
+          <br>
+          <section>
+            <label for="pizza_base">Select Your Base:</label><br>
+            <select id="pizza_base">
+              <option value="standard">Standard</option>
+              <option value="thin">Thin Crust</option>
+              <option value="stuffed">Stuffed</option>
+            </select>
+          </section>
+          <br>
+          <section>
+            <label for="pizza_base_souce">Select Base Souce</label>
+            <input id="pizza_base_souce" type="text" list="pizza_souce_list">
+            <datalist id="pizza_souce_list">
+              <option value="Tomato Souce"></option>
+              <option value="BBQ Souce"></option>
+              <option value="Hot BBQ Souce"></option>
+            </datalist>
+          </section>
+          <br>
+          <section>
+            <label for="pizza_size">Select Pizza Size:</label>
+            <span>Small</span>
+            <input type="range" min="1" max="4" step="1">
+            <span>Extra Large</span>
+          </section>
+          <br>
+          <section>
+            <label for="">Select Topinngs:</label>
+            <br>
+            <input id="mushroom" type="checkbox" value="mushroom">
+            <label for="mushroom">Mushroom</label> 
+            <br>
+            <input id="olive" type="checkbox" value="olive">
+            <label for="olive">Olive</label> 
+            <br>
+            <input id="peppers" type="peppers" value="peppers">
+            <label for="peppers">Peppers</label> 
+            <br>
+          </section>
+          <br>
+          <section>
+            <label for="collection_time">When will you pick up</label>
+            <input id="collection_time" type="number" name="collection_time" min="15" max="50">
+        </section>
+        <br>
+        <section>
+          <button>Submit</button>
+        </section>
+        </form>
+        
+    </main>
+    <hr>
+    <footer>
+        &copy;2020 Pizzamatic
+    </footer>
+</body>
+</html>
